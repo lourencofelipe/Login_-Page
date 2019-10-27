@@ -63,7 +63,14 @@ class LoginPage extends StatelessWidget {
                     color: Colors.black38,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ResetPasswordPage(),
+                    ),
+                  ),
+                },
               ),
             ),
             SizedBox(
